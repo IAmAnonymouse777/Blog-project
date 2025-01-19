@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Taking Tool</title>
+  <link rel="stylesheet" href="./notes.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Notes</h1>
+      <button id="addNoteBtn">+ Add Note</button>
+    </header>
+    <div id="notesContainer"></div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-header">
+      <h3>Add New Note</h3>
+      <button id="closePopup">X</button>
+    </div>
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <button id="saveNoteBtn">Save Note</button>
+  </div>
+  <script src="./notes.js"></script>
+</body>
+</html>

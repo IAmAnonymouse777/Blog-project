@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Homepage - Ultimate Dark Theme</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #1F1F1F;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #BB86FC;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            color: #BB86FC;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav a {
+            color: #E0E0E0;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #BB86FC;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #3700B3, #03DAC6);
+            color: #FFFFFF;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .hero button {
+            background-color: #BB86FC;
+            color: #121212;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .hero button:hover {
+            background-color: #03DAC6;
+            transform: scale(1.1);
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            background-color: #1F1F1F;
+        }
+        .featured .card {
+            background-color: #232323;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            width: 300px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .featured .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+        }
+        .featured .card img {
+            width: 100%;
+        }
+        .featured .card h3 {
+            padding: 20px;
+            font-size: 1.6rem;
+            color: #BB86FC;
+        }
+        .featured .card p {
+            padding: 0 20px 20px;
+            font-size: 1rem;
+            color: #B0B0B0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1F1F1F;
+            color: #B0B0B0;
+            border-top: 2px solid #03DAC6;
+        }
+        footer a {
+            color: #BB86FC;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #03DAC6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Dark Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Dark Side</h2>
+        <p>Explore innovative ideas, inspiring stories, and everything in between.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Post Image">
+            <h3>Featured Post 1</h3>
+            <p>Discover the hidden gems in the tech world with our latest article.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Post Image">
+            <h3>Featured Post 2</h3>
+            <p>Dive into the mysteries of design and user experience.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Dark Blog. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

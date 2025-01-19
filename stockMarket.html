@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Stock Market</title>
+</head>
+<body>
+    <header>
+        <div class="navBarDiv" id="navBarDiv">
+            <div class="logo_div">
+                Discovery ZONE
+            </div>
+            <nav class="navbar">
+                <ul class="navbar_ul">
+                  <a href="./index.html" target="_blank"> <li class="list">Home</li> </a> 
+                 <a href="./about.html" target="_blank">  <li  class="list">About</li></a> 
+                   <li class="list" id="categoriesDropdown"> Categories
+                    <ul class="dropdown-menu">
+                        <li><a href="./food_recipe.html">Food Recipe</a></li>
+                        <li><a href="./stockMarket.html">Stock Market</a></li>
+                        <li><a href="./news.html">News</a></li>
+                        
+                    </ul>
+                   </li>
+                  
+                   <a href="./contact_us.html" target=""> <li  class="list">Contact</li></a>
+                    <button id="addNoteBtn">+ Add Note</button>
+                    <button id="addNoteBtn_per" onclick="openNote()">Permanent Notes</button>
+                    <script>
+                         function openNote() {
+                         window.open('./notes.html', '_blank'); // Opens notes.html in a new tab
+                            }
+                    </script>
+                </ul>
+                
+            </nav>
+         
+        </div>
+    </header>
+    <div id="popup" class="popup hidden">
+        <div class="popup-header">
+          <h3>Quick Note</h3>
+          <button id="closePopup">X</button>
+        </div>
+        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+      </div>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search news..." />
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="blogTypeTitleDiv">
+            <h2> Stock Market </h2>
+       </div>
+
+    <div class="grid_container" id="grid_container1">
+        <div class="grid_div" id="grid_div1">
+        </div>
+        <div id="load_more_container">
+            <button id="load_more_btn">Load More</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <h3 class="footer_title">Discovery ZONE</h3>
+                <p class="footer_description">Your daily dose of ideas, stories, news, and creativity. Stay inspired and connected with us!</p>
+            </div>
+            <div class="footer_section">
+                <h3 class="footer_title">Quick Links</h3>
+                <ul class="footer_links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact_us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h3 class="footer_title">Follow Us</h3>
+                <div class="social_links">
+                    <i class="fab fa-instagram"><a href="https://www.instagram.com/i_am_anonymous_777/profilecard/?igsh=amRsbHk5OTRueDBq"  class="social">Instagram</a></i>
+                    <i class="fab fa-twitter"><a href="https://x.com/YogeshBavi54437" class="social">Twitter</a></i>
+                    <i class="fab fa-github"><a href="https://github.com/IAmAnonymouse777/#tutorial%20for%20git%20bash" class="social">Github</a></i>
+                    <i class="fab fa-facebook"><a href="https://www.facebook.com/profile.php?id=100041696181135" class="social">Facebook</a></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; 2025 Discovery ZONE. All rights reserved.</p>
+        
+        </div>
+    </footer>
+    <script src="./stockMarket.js"></script>
+    <script src="./notes_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+    <link rel="stylesheet" href="./TextEditorStyle.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <form action="">
+
+ 
+    <div class="container">
+    <div class="toolbar">
+        <!-- Formatting Buttons -->
+        <button onclick="format('bold')" title="Bold"><i class="fas fa-bold"></i></button>
+        <button onclick="format('italic')" title="Italic"><i class="fas fa-italic"></i></button>
+        <button onclick="format('underline')" title="Underline"><i class="fas fa-underline"></i></button>
+    
+
+        <!-- Heading Selector -->
+        <select onchange="applyHeading(this.value)">
+            <option value="">Heading</option>
+            <option value="h1">H1</option>
+            <option value="h2">H2</option>
+            <option value="h3">H3</option>
+            <option value="p">Paragraph</option>
+        </select>
+
+        <!-- Text Alignment -->
+        <button onclick="format('justifyLeft')" title="Align Left"><i class="fas fa-align-left"></i></button>
+        <button onclick="format('justifyCenter')" title="Center"><i class="fas fa-align-center"></i></button>
+        <button onclick="format('justifyRight')" title="Align Right"><i class="fas fa-align-right"></i></button>
+        <button onclick="format('justifyFull')" title="Justify"><i class="fas fa-align-justify"></i></button>
+
+        <!-- Font Color -->
+        <input type="color" onchange="applyColor(this.value)" title="Font Color">
+
+        <!-- Additional Features -->
+        <button onclick="format('strikeThrough')" title="Strikethrough"><i class="fas fa-strikethrough"></i></button>
+        <button onclick="format('insertOrderedList')" title="Ordered List"><i class="fas fa-list-ol"></i></button>
+        <button onclick="format('insertUnorderedList')" title="Unordered List"><i class="fas fa-list-ul"></i></button>
+        <button onclick="format('removeFormat')" title="Clear Formatting"><i class="fas fa-eraser"></i></button>
+
+        <!-- Undo and Redo -->
+        <button onclick="format('undo')" title="Undo"><i class="fas fa-undo"></i></button>
+        <button onclick="format('redo')" title="Redo"><i class="fas fa-redo"></i></button>
+
+        <!-- New Features -->
+        <button onclick="format('subscript')" title="Subscript"><i class="fas fa-subscript"></i></button>
+        <button onclick="format('superscript')" title="Superscript"><i class="fas fa-superscript"></i></button>
+        <select onchange="applyFontSize(this.value)">
+            <option value="">Font Size</option>
+            <option value="1">Small</option>
+            <option value="3">Normal</option>
+            <option value="5">Large</option>
+            <option value="7">Huge</option>
+        </select>
+        <input type="number" placeholder="Font Size (px)" onchange="applyCustomFontSize(this.value)" style="width: 120px;" title="Custom Font Size">
+        <select onchange="applyFontName(this.value)">
+            <option value="">Font Family</option>
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+        <!-- Background Color -->
+        <input type="color" onchange="applyBackgroundColor(this.value)" title="Background Color">
+
+        <!-- Highlight Text -->
+        <button onclick="highlightText()" title="Highlight"><i class="fas fa-highlighter"></i></button>
+
+        <!-- Indentation -->
+        <button onclick="format('indent')" title="Indent"><i class="fas fa-indent"></i></button>
+        <button onclick="format('outdent')" title="Outdent"><i class="fas fa-outdent"></i></button>
+
+        <!-- Hyperlink -->
+        <button onclick="insertLink()" title="Insert Link"><i class="fas fa-link"></i></button>
+
+        <!-- Image Insertion -->
+        <input type="file" accept="image/*" onchange="insertImage(event)" title="Insert Image">
+
+        <!-- Emoji Picker -->
+        <button onclick="insertEmoji()" title="Emoji"><i class="fas fa-smile"></i></button>
+
+        <!-- Clipboard Operations -->
+        <button onclick="format('copy')" title="Copy"><i class="fas fa-copy"></i></button>
+        <button onclick="format('cut')" title="Cut"><i class="fas fa-cut"></i></button>
+        <button onclick="format('paste')" title="Paste"><i class="fas fa-paste"></i></button>
+
+        <!-- Save as File -->
+        <button onclick="saveAsFile()" title="Save as File"><i class="fas fa-save"></i></button>
+   
+    </div> 
+    <label for="title_text" id="title_label">Title: </label>
+        <input type="text" name="title" id="title_text" placeholder="Enter Title Here ..." required>
+        
+        <label for="user_name" id="user_name_label">Name: </label>
+        <input type="text" name="user_name" id="user_name" placeholder="Enter Your Name Here ..." required>
+        
+        <label for="blog_category" id="category_label">Category: </label>
+        <select name="category" id="blog_category" required>
+            <option value="">Select Blog Category</option>
+            <option value="Technology">Technology</option>
+            <option value="Food">Food</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="News">News</option>
+        </select>
+        
+        <div class="editor" contenteditable="true" id="content">
+            Type your message here...
+        </div>
+        <div id="btn_div">
+            <button type="button" id="post_blog_btn">Post Blog</button>
+        </div>
+       
+</form>
+    
+</div>
+
+    <script src="./TextEditorScript.js" defer></script>
+    <script src="./handle_submission.js" defer></script>
+    <!-- <script src="../script1.js" defer></script> -->
+</body>
+</html>

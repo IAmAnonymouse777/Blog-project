@@ -71,7 +71,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+/*     min-height: 100vh; */
     background-color: #121212; /* Dark theme background */
     margin: 0;
     padding: 20px;

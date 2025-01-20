@@ -7,7 +7,7 @@ Table of Contents
  - Setup Instructions
  - API Integration
  - Usage
- - Screenshots
+
  
 
 

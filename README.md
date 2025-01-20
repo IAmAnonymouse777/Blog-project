@@ -112,20 +112,3 @@ Once the project is set up and opened in a browser, users can interact with the 
 - The website is designed to be responsive, ensuring smooth functionality across various devices like mobile phones, tablets, and desktops.
 
 
-## Screenshot
-1. Homepage View
-
-A glimpse of the homepage with the blog categories and interactive features.
-
-2. Blog Creation Page
-
-Users can create and edit their blogs using the built-in text editor.
-
-3. Notes Section
-
-The Quick Notes and Permanent Notes sections for managing temporary and saved ideas.
-
-4. Search Functionality
-
-The search feature allowing users to explore recipes, news, and stock market updates.
-
